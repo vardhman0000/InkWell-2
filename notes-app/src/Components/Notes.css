@@ -1,0 +1,94 @@
+/* #app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.25;
+}
+
+.add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+} */
+
+/* .settings .settings-menu-list {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: bottom right;
+    transition: all 0.3s ease-in;
+}
+.settings:hover .settings-menu-list {
+    opacity: 1;
+    transform: scale(1);
+} */
+
+.noteCard .pinHollow,
+.noteCard .add-image,
+.noteCard .editBtn,
+.noteCard .deleteBtn {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+/* Remove the hover effect and set opacity to 1 for pin2 when pinned */
+.noteCard .pinHollow.pinned {
+    opacity: 1;
+}
+.noteCard:hover .pinHollow,
+.noteCard:hover .add-image,
+.noteCard:hover .editBtn,
+.noteCard:hover .deleteBtn{
+    opacity: 1;
+}
+
+.pinFilled {
+    opacity: 0;
+}
+.pinIcon:hover {
+    opacity: 0;
+}
+.pinHollow:hover .pinFilled {
+    opacity: 0.4;
+}
+/* .delContainer {
+    opacity: 50%;
+    backdrop-filter: blur(20px);
+} */
+
+/* .show {
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.imageIcon .imageList {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 0.2s ease-in-out;
+}
+.imageIcon:hover .imageList {
+    opacity: 1;
+    transform: scale(1);
+}
